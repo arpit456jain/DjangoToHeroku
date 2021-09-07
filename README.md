@@ -35,7 +35,7 @@ python manage.py startapp <app name>
 
 **5. Make runtime.txt and add your versuin of python in it like this**
 ```
-python-3.7.4
+python-3.7.12
 ```
 
 **6. Make requirements.txt**
@@ -43,7 +43,7 @@ python-3.7.4
 pip freeze >  requirements.txt
 ```
 
-**7. Make a procfile and add**
+**7. Make a Procfile and add this but make sure it has capital P**
 ```
 web: gunicorn <project name>.wsgi:application --log-file -
 ```
