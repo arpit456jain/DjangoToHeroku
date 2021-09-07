@@ -46,3 +46,20 @@ pip freeze >  requirements.txt
 ```
 web: gunicorn <project name>.wsgi:application --log-file -
 ```
+
+**8. Add some Code in start of settings.py **
+```
+import django_heroku
+import os
+```
+
+**9. Add some Code in end of settings.py **
+```
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+django_heroku.settings(locals())
+```
+
+**10. Don't forget to add * in allowed host**
+```
+ALLOWED_HOSTS = ["*"]
+```
