@@ -27,9 +27,10 @@ Step by step process of hosting django website to heroku
 pip install django gunicorn django-heroku
 ```
 
-**4. Make Project**
+**4. Make Project and App**
 ```
 django-admin startproject <projectname>
+python manage.py startapp <app name>
 ```
 
 **5. Make runtime.txt and add your versuin of python in it like this**
