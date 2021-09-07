@@ -65,3 +65,26 @@ ALLOWED_HOSTS = ["*"]
 ```
 
 **11. Now all done either you can push all this to GitHub and connect your heroku to Github and deploy master branch or you can use heroku CLI**
+
+## For Heroku CLI follow these steps
+
+**1. Login to heroku,make sure you had installed the heroku CLI**
+```
+heroku login
+```
+
+**2. Create heroku app**
+```
+heroku create <app-name>
+```
+**3. Push the code to heroku**
+```
+git add -A
+git commit -a -m "first commit"
+git push heroku master
+```
+
+**4. run migrate command**
+```
+heroku run python manage.py migrate
+```
