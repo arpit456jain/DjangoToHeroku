@@ -47,13 +47,13 @@ pip freeze >  requirements.txt
 web: gunicorn <project name>.wsgi:application --log-file -
 ```
 
-**8. Add some Code in start of settings.py **
+**8. Add some Code in start of settings.py**
 ```
 import django_heroku
 import os
 ```
 
-**9. Add some Code in end of settings.py **
+**9. Add some Code in end of settings.py**
 ```
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 django_heroku.settings(locals())
@@ -63,3 +63,5 @@ django_heroku.settings(locals())
 ```
 ALLOWED_HOSTS = ["*"]
 ```
+
+**11. Now all done either you can push all this to GitHub and connect your heroku to Github and deploy master branch or you can use heroku CLI**
