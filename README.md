@@ -24,7 +24,7 @@ Step by step process of hosting django website to heroku
     
 **3. Install required modules**
 ```
-pip install django gunicorn django-heroku
+pip install gunicorn django-heroku
 ```
 
 **4. Make Project and App**
